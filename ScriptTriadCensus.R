@@ -19,14 +19,14 @@ library(ggplot2)
 
 # @Gerrit, zijn al die pakketten nou echt nodig? 
 # Is er een manier om het hele script te runnen en dan te kijken welke pakketten 
-# daarwerkelijk gebruikt zijn zodat ik de rest eruit kan gooien? 
+# daadwerkelijk gebruikt zijn zodat ik de rest eruit kan gooien? 
 
-# Even aanpassen...
+# Even aanpassen indien nodig...
 setwd("~/Desktop/R/Leesplankje")
 
 # Lees de data
 # @Gerrit: de eerlijkheid gebied te zeggen dat ik niet precies weet wat hier gebeurt. 
-# Het werkt... maar kan het ook eenvoudiger. 
+# Het werkt... maar kan het ook eenvoudiger?
 
 Data <- read_csv("NetworkData_Edges.csv", 
                  col_types = cols(Id = col_integer(), 
@@ -52,7 +52,7 @@ class(Graph)
 plot(Graph)
 
 # @Gerrit Zelfde vraag over het verschil tussen een Netwerk en een Graph. 
-# Die zijn niet prezies hetzelfde maar wat het verschil is is niet duidelijk. 
+# Die zijn niet precies hetzelfde maar wat het verschil is mij niet duidelijk. 
 
 # Bereken het aantal nodes en edges
 AantalEdges <- gsize(Graph)
